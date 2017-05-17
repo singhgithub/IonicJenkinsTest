@@ -7,19 +7,22 @@
 // });
 
 const sum = require('./home');
+const hello = require('./home');
+const world = require('./home');
+const helloworld = require('./home');
 
 test('adds 1 + 2 to equal 3', () => {
   expect(sum(1, 2)).toBe(3);
 });
 
 test('should return hello', () => {
-  expect(gethello()).toBe('hello');
+  expect(hello()).toBe('hello');
 });
 
 test('should return world', () => {
-  expect(getworld()).toBe('world');
+  expect(world()).toBe('world');
 });
 
 test('should return helloworld', () => {
-  expect(gethelloworld()).toBe('helloworld');
+  expect(helloworld()).toBe('helloworld');
 });
