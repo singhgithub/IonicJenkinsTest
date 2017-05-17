@@ -1,19 +1,18 @@
-function sum(a, b) {
+
+
+exports.sum = function (a, b) {
   return a + b;
 }
-module.exports = sum;
 
-function gethello() {
+exports.gethello = function () {
   return 'hello';
 }
-module.exports = gethello;
 
-function getworld() {
-  return 'worldd';
-}
-module.exports = getworld;
 
-function gethelloworld() {
-  return 'helloworldd';
+exports.getworld = function () {
+  return 'world';
 }
-module.exports = gethelloworld;
+
+exports.gethelloworld = function () {
+  return 'helloworld';
+}

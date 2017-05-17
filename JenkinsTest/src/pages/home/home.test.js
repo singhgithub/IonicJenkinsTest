@@ -6,23 +6,20 @@
 //   expect(sum(1, 2)).toBe(3);
 // });
 
-const sum = require('./home');
-const hello = require('./home');
-const world = require('./home');
-const helloworld = require('./home');
+const home = require('./home');
 
 test('adds 1 + 2 to equal 3', () => {
-  expect(sum(1, 2)).toBe(3);
+  expect(home.sum(1, 2)).toBe(3);
 });
 
 test('should return hello', () => {
-  expect(hello()).toBe('hello');
+  expect(home.gethello()).toBe(100);
 });
 
 test('should return world', () => {
-  expect(world()).toBe('world');
+  expect(home.getworld()).toBe('world');
 });
 
 test('should return helloworld', () => {
-  expect(helloworld()).toBe('helloworld');
+  expect(home.gethelloworld()).toBe('helloworld');
 });
