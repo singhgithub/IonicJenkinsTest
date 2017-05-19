@@ -22,7 +22,6 @@ platform :android do
 
   desc "Runs all the tests"
   lane :test do
-    sh "cd /Users/Shared/Jenkins/Home/workspace/IonicTest/JenkinsTest"
     sh "npm install"
     sh "npm test"
     sh "cordova platform rm android"
