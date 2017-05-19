@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { GoogleAnalytics } from '@ionic-native/google-analytics';
 
 @Component({
   selector: 'page-home',
@@ -25,10 +26,19 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController, private ga: GoogleAnalytics) {
     console.log('HomePage Constructor is Called')
-  }
 
+    this.ga.startTrackerWithId('UA-99449396-1')
+   .then(() => {
+     console.log('Google analytics is ready now');
+        this.ga.trackView('test');
+     // Tracker is ready
+     // You can now track pages or set additional information such as AppVersion or UserId
+   })
+   .catch(e => console.log('Error starting GoogleAnalytics', e));
+
+  }
 }
 
 // export function sum(a, b) {

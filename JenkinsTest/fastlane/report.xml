@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="fastlane.lanes">
+    
+    
+    
+      
+      <testcase classname="fastlane.lanes" name="0: Verifying required fastlane version" time="0.003142">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="1: default_platform" time="0.003011">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="2: cd /Users/Shared/Jenkins/Home/workspace/IonicTest/JenkinsTest" time="0.015733">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="3: npm install" time="6.61917">
+        
+      </testcase>
+    
+  </testsuite>
+</testsuites>
